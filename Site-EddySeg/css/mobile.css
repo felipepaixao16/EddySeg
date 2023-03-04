@@ -1,0 +1,145 @@
+#navbar {
+    height: 180px;
+}
+
+#navbar-container {
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+#navbar-items {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+#navbar-items li:nth-child(2) {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+/*showcase*/
+#showcase-container {
+    padding: 40px;
+}
+
+/*Clients*/
+#clients-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.client {
+    width: 50%;
+}
+
+/*Features*/
+#features-container {
+    grid-template-columns: 1fr;
+}
+
+#features-container .feature:nth-child(2) {
+    margin: 15px 0;
+}
+
+/*Product*/
+#product-container {
+    flex-direction: column;
+}
+
+#items {
+    width: 90%;
+}
+
+.item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/*Testemunhas*/
+.testimonial {
+    flex-direction: column;
+    text-align: center;
+}
+
+/*Galeria*/
+#gallery-container {
+    grid-template-columns: 1fr;
+}
+
+.gallery-image {
+    width: 100%;
+}
+
+@keyframes bounce-animation {
+    16.65% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+  
+    33.3% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+  
+    49.95% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+  
+    66.6% {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+  
+    83.25% {
+      -webkit-transform: translateY(1px);
+      transform: translateY(1px);
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  
+  .bounce {
+    animation-name: bounce-animation;
+    animation-duration: 2s;
+  }
+  
+  
+  
+  /*everything below here is just setting up the page, so dont worry about it */
+  
+  
+  @media (min-width: 768px) {
+    .navbar{
+      text-align: center !important;
+      float: none;
+      display: inline-block;
+    }
+  }
+  
+  body {
+    background-color: rgba(0,0,0,1);
+    font-weight:600;
+    text-align:center !important;
+    color: white;
+  }
+  
+  nav {
+    background: none !important;
+    text-transform:uppercase;
+    li {
+      margin-left: 3em;
+      margin-right: 3em;
+      a{
+        transition: .5s color ease-in-out;
+      }
+    }
+  }
+  
+  .page-title {
+    opacity: .75 !important;
+  }
