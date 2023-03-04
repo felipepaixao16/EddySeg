@@ -1,2 +1,0 @@
-# Website-profissional
- WebSite-EddySeg
