@@ -211,3 +211,31 @@ main {
     margin-top: 30vh;
     text-align: center;
 }
+
+@media (max-width: 400px) {
+
+    body {
+       width: 100%;
+    }
+
+    #showcase {
+        width: 100%;
+    }
+
+    #navbar {
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+
+    .navbar-container {
+        margin-left: 10px;
+        margin-right: 10px;
+        display: block;
+    }
+
+    .navbar-items {
+        display: grid;
+        grid-template-columns: repeat(3, 60px);
+        justify-content: space-around;
+        align-content: center;
+    }
